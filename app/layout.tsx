@@ -1,46 +1,77 @@
-import type { Metadata } from 'next'
-import { Playfair_Display, Inter } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
-import './globals.css'
+import type { Metadata } from "next"
+import { Playfair_Display, Inter } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
 
-const playfair = Playfair_Display({ 
+import "./globals.css"
+
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: '--font-playfair',
-  display: 'swap',
+  variable: "--font-playfair",
+  display: "swap",
 })
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
-  variable: '--font-inter',
-  display: 'swap',
+  variable: "--font-inter",
+  display: "swap",
 })
 
 export const metadata: Metadata = {
-  title: 'SVR GOLD TRADERS | Trusted Gold Trading Partner',
-  description: 'SVR Gold Traders - Your trusted partner for gold trading, buying, selling, and investment guidance. Experience premium service with the best market rates and customer satisfaction.',
-  keywords: 'gold trading, gold buyers, gold sellers, gold investment, SVR Gold Traders, gold market rates, trusted gold dealer',
-  authors: [{ name: 'SVR Gold Traders' }],
+  title: "SVR Gold Traders | Trusted Gold Trading Partner",
+
+  description:
+    "SVR Gold Traders in Mangalagiri, Andhra Pradesh. Trusted gold trading, gold buying, gold selling, investment guidance, and best gold market rates.",
+
+  keywords: [
+    "SVR Gold Traders",
+    "Gold Traders",
+    "Gold Shop in Mangalagiri",
+    "Gold Trading Andhra Pradesh",
+    "Gold Buying",
+    "Gold Selling",
+    "Gold Investment",
+    "Gold Market Rates",
+    "Trusted Gold Dealer",
+    "Mangalagiri Gold Traders",
+    "Gold Traders Guntur",
+  ],
+
+  authors: [
+    {
+      name: "SVR Gold Traders",
+    },
+  ],
+
   openGraph: {
-    title: 'SVR GOLD TRADERS | Trusted Gold Trading Partner',
-    description: 'Your trusted partner for gold trading, buying, selling, and investment guidance.',
-    type: 'website',
+    title: "SVR Gold Traders | Trusted Gold Trading Partner",
+
+    description:
+      "Trusted gold trading, gold buying, gold selling, and investment guidance services in Mangalagiri, Andhra Pradesh.",
+
+    type: "website",
+
+    siteName: "SVR Gold Traders",
   },
+
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
+        url: "/icon-light-32x32.png",
+        media: "(prefers-color-scheme: light)",
       },
+
       {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
+        url: "/icon-dark-32x32.png",
+        media: "(prefers-color-scheme: dark)",
       },
+
       {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: "/icon.svg",
+        type: "image/svg+xml",
       },
     ],
-    apple: '/apple-icon.png',
+
+    apple: "/apple-icon.png",
   },
 }
 
@@ -50,10 +81,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+    <html
+      lang="en"
+      className={`${playfair.variable} ${inter.variable}`}
+    >
       <body className="font-sans antialiased bg-background">
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+
+        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
   )
