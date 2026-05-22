@@ -9,6 +9,8 @@ import {
   Clock,
   Send,
   MessageCircle,
+  Instagram,
+  Facebook,
 } from "lucide-react"
 
 import { cn } from "@/lib/utils"
@@ -73,6 +75,33 @@ export function ContactSection() {
         },
       ],
     },
+    {
+icon: Facebook,
+
+title: "Facebook",
+
+details: [
+{
+label: "SVR Traders",
+
+action: "https://facebook.com/SvrTraders",
+},
+],
+},
+
+{
+icon: Instagram,
+
+title: "Instagram",
+
+details: [
+{
+label: "@svrt_raders",
+
+action: "https://instagram.com/svrt_raders",
+},
+],
+},
 
     {
       icon: Mail,
