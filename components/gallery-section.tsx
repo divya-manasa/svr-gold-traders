@@ -73,7 +73,7 @@ category:"Services",
 
 {
 type:"image",
-src:"/images/gellery-7.jpeg",
+src:"/images/gellery-7.jpg",
 alt:"SVR Gold Traders Collection",
 title:"Premium Collection",
 category:"Gallery",
