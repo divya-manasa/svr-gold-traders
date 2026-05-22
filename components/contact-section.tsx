@@ -49,11 +49,11 @@ export function ContactSection() {
       title: "Phone",
       details: [
         {
-          label: "+91 9177571222",
+          label: "Mammuleti Pawan Kumar - +91 9177571222",
           action: "tel:+919177571222",
         },
         {
-          label: "+91 9290931511",
+          label: "Mammuleti Sathish Babu — +91 9290931511",
           action: "tel:+919290931511",
         },
       ],
@@ -64,11 +64,11 @@ export function ContactSection() {
       title: "WhatsApp",
       details: [
         {
-          label: "+91 9177571222",
+          label: "Mammuleti Pawan Kumar - +91 9177571222",
           action: "https://wa.me/919177571222",
         },
         {
-          label: "+91 9290931511",
+          label: "Mammuleti Sathish Babu — +91 9290931511",
           action: "https://wa.me/919290931511",
         },
       ],
